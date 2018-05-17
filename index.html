@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Han">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Yes, We Can" />
 
 
 
@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="This is not just my blog ,but a kind of belief!#博客描述">
+<meta name="description" content="This is not just my blog ,but a kind of belief!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gatsby blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Gatsby blog">
-<meta property="og:description" content="This is not just my blog ,but a kind of belief!#博客描述">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="This is not just my blog ,but a kind of belief!">
+<meta property="og:locale" content="zh-Han">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gatsby blog">
-<meta name="twitter:description" content="This is not just my blog ,but a kind of belief!#博客描述">
+<meta name="twitter:description" content="This is not just my blog ,but a kind of belief!">
 
 
 
@@ -104,7 +104,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -136,7 +136,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Han">
 
   
   
@@ -185,7 +185,17 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -195,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -218,6 +228,286 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/python学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/python学习/" itemprop="url">python学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T15:53:17+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用Head first python教程开启我的python学习之旅。<br>在学习了一些简单的函数之后我发现需要重点学习一下split()函数的使用以及参数情况，现在总结如下作为以后的review时的参考。</p>
+<p>##语法</p>
+<pre><code>`str.split(str=&quot;&quot;,num=string.count(str))`
+</code></pre><p>##参数</p>
+<blockquote>
+<p>str–分隔符，默认为所有的空字符、换行（\n）、制表符（\t）等。<br>num–分割次数</p>
+</blockquote>
+<p>##返回值<br>return分割后的字符串列表，注意这里返回的是一个list列表，列表的例子可以在这里举一个：[‘james’,’jack’,’lion’]这是一个列表。</p>
+<p>##实例1<br><code>str=&quot;Line1-abacdef\nLine2-abc\nLine4-abcd&quot;</code></p>
+<p><code>print str.split() //取消掉所有的空格符</code></p>
+<p><code>print str.split(&#39; &#39;,1)</code></p>
+<p>##实例输出结果<br>    <code>[&#39;Line1-abcdef&#39;,&#39;Line2-abc&#39;,&#39;Line4-abcd&#39;]</code><br>    <code>[&#39;Line1-abcdef&#39;,&#39;\nLine2-abc&#39;&#39;Line4-abcd&#39;]</code></p>
+<p>##实例2<br>  <code>str=&quot;hello boy&lt;[www.baidu.com]&gt;byebye&quot;</code></p>
+<p>  <code>str.split(&quot;[&quot;).split(&quot;]&quot;)[0].split(&quot;.&quot;)</code></p>
+<pre><code>&apos;www.baidu.com&apos;
+
+`str.split(&quot;[&quot;)[1].split(&quot;]&quot;)[0].split(&quot;.&quot;)`
+//从左往右执行三次
+[&apos;www&apos;,&apos;baidu&apos;,&apos;com&apos;]
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/My-new-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/My-new-post/" itemprop="url">学习python之道</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T01:06:42+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在通过了阅读HeadFirstPython一周之后发现自己的自己进步了许多，为了让这种进步在将来有迹可循，现在努力开始自己的代码之旅。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -261,9 +551,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-12T00:54:24+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-12T00:54:24+08:00">
                 2018-05-12
               </time>
             
@@ -282,7 +572,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -400,7 +690,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">the great liu</p>
-              <p class="site-description motion-element" itemprop="description">This is not just my blog ,but a kind of belief!#博客描述</p>
+              <p class="site-description motion-element" itemprop="description">This is not just my blog ,but a kind of belief!</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -410,8 +700,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -420,10 +710,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">分类</span>
-                
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
               </div>
             
 
@@ -431,10 +721,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
               </div>
             
 
@@ -479,7 +769,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -487,7 +777,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
