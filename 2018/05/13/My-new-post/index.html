@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Yes, We Can" />
+  <meta name="keywords" content="以太网 无线局域网 PPP," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="在通过了阅读HeadFirstPython一周之后发现自己的自己进步了许多，为了让这种进步在将来有迹可循，现在努力开始自己的代码之旅。">
+<meta name="description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
+<meta name="keywords" content="以太网 无线局域网 PPP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习python之道">
+<meta property="og:title" content="TCP&#x2F;IP学习1">
 <meta property="og:url" content="http://yoursite.com/2018/05/13/My-new-post/index.html">
 <meta property="og:site_name" content="Gatsby blog">
-<meta property="og:description" content="在通过了阅读HeadFirstPython一周之后发现自己的自己进步了许多，为了让这种进步在将来有迹可循，现在努力开始自己的代码之旅。">
+<meta property="og:description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
 <meta property="og:locale" content="zh-Han">
-<meta property="og:updated_time" content="2018-05-12T17:12:10.291Z">
+<meta property="og:updated_time" content="2018-05-24T15:11:27.878Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习python之道">
-<meta name="twitter:description" content="在通过了阅读HeadFirstPython一周之后发现自己的自己进步了许多，为了让这种进步在将来有迹可循，现在努力开始自己的代码之旅。">
+<meta name="twitter:title" content="TCP&#x2F;IP学习1">
+<meta name="twitter:description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
 
 
 
@@ -125,7 +126,7 @@
 
 
 
-  <title>学习python之道 | Gatsby blog</title>
+  <title>TCP/IP学习1 | Gatsby blog</title>
   
 
 
@@ -259,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学习python之道</h1>
+          <h1 class="post-title" itemprop="name headline">TCP/IP学习1</h1>
         
 
         <div class="post-meta">
@@ -281,6 +282,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TCP-IP/" itemprop="url" rel="index">
+                    <span itemprop="name">TCP/IP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -309,7 +332,12 @@
       
 
       
-        <p>在通过了阅读HeadFirstPython一周之后发现自己的自己进步了许多，为了让这种进步在将来有迹可循，现在努力开始自己的代码之旅。</p>
+        <h1 id="数据链路"><a href="#数据链路" class="headerlink" title="数据链路"></a>数据链路</h1><ul>
+<li>以太网</li>
+<li>无线局域网</li>
+<li>PPP<h2 id="数据链路定义"><a href="#数据链路定义" class="headerlink" title="数据链路定义"></a>数据链路定义</h2>通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。<br>##MAC地址##<br>Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任何一个网卡的MAC地址都是唯一的。一般是使用十六进制数进行表示。<br>当然此处也是有例外情况存在的—-Mac地址可能不是唯一的<br>实际上MAC地址即使相同只要不属于同一个数据链路就不会出现问题。<br>例如人们可以在可以修改自己的主板地址，还有一台主机上同时启动多台虚拟机，由于没有硬件网卡的存在只能由虚拟软件自己设定MAC地址给多个虚拟网卡，这是就很难保证生成的MAC地址是独一无二的。<br>##共享介质型网络##<br>从通信介质上可以将网络分为：共享介质型、非共享介质型。<br>共享介质型网络指的是由多个设备共享一个通信介质的一种网络，在这种方式下，设备之间使用同一个载波信号进行发送和接收，使用半双工通信，并有必要对介质访问控制。</li>
+</ul>
+<p>共享介质型网络中有两种介质访问控制方式：一种是争用方式，另一种是令牌传递方式。</p>
 
       
     </div>
@@ -324,6 +352,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/以太网-无线局域网-PPP/" rel="tag"># 以太网 无线局域网 PPP</a>
+          
+        </div>
       
 
       
@@ -398,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -414,7 +457,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -425,7 +468,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -436,7 +479,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -459,6 +502,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据链路"><span class="nav-number">1.</span> <span class="nav-text">数据链路</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据链路定义"><span class="nav-number">1.1.</span> <span class="nav-text">数据链路定义</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
