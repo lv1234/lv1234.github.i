@@ -82,7 +82,7 @@
 <meta name="description" content="This is not just my blog ,but a kind of belief!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gatsby blog">
-<meta property="og:url" content="http://yoursite.com/tags/算法/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Gatsby blog">
 <meta property="og:description" content="This is not just my blog ,but a kind of belief!">
 <meta property="og:locale" content="zh-Han">
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/算法/"/>
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
 
 
 
 
 
-  <title>Tag: 算法 | Gatsby blog</title>
+  <title>Gatsby blog</title>
   
 
 
@@ -143,7 +143,8 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,55 +227,160 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  
-  
-  
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>算法<small>Tag</small>
-        </h1>
-      </div>
-
+  <section id="posts" class="posts-expand">
+    
       
-        
+
+  
+
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/12/hello-world/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/05/12/hello-world/" itemprop="url">
-              
-                <span itemprop="name">算法的python实现</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/12/hello-world/" itemprop="url">算法的python实现</a></h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-12T00:54:24+08:00"
-              content="2018-05-12" >
-          05-12
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-12T00:54:24+08:00">
+                2018-05-12
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        
+          
+            <p>开始我的算法学习之旅，在接下来的一个月时间内我会努力完成每天的小目标，现在是开始我的算法的时候了。</p>
+<h3 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">def binary_search(list,item):</span><br><span class="line">	low =0   //low用于跟踪要查找的列表部分</span><br><span class="line">	high =len(list)-1 //长度减去第一个low</span><br><span class="line">	<span class="keyword">while</span> low&lt;=high:  //范围未缩小到只包含一个元素，就执行下面的操作</span><br><span class="line">		mid=(low+high)/2</span><br><span class="line">		guess=list[mid]</span><br><span class="line">		<span class="keyword">if</span> guess ==item:  //找到了元素</span><br><span class="line">		<span class="built_in">return</span> mid</span><br><span class="line">		<span class="keyword">if</span> guess &gt; item:   //猜的数字小了</span><br><span class="line">			high=mid-1</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			low = mid+1</span><br><span class="line">	<span class="built_in">return</span> None            //没有指定的元素</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">二分查找相较简单查找执行效率要高。</span><br><span class="line">1、选用算法一般选择效率最高的算法，这样才能最高限度地减少运行时间或占用的空间</span><br><span class="line">简单的举个例子就是如果一个列表中包含400亿个数字，若使用简单查找最多需要猜40亿次</span><br><span class="line">也就是说对找到准确的数字需要猜测的次数与列表长度相同，这就是线性时间。找到准确的数字需要猜测的次数与列表长度相同，这就是线性时间。</span><br><span class="line">2、如果使用二分查找只需要猜32次，二分查找的时间为对数时间。</span><br></pre></td></tr></table></figure>
+<h3 id="大O表示法"><a href="#大O表示法" class="headerlink" title="大O表示法"></a>大O表示法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">大O表示法可以指出算法有多快，假设列表包含n个元素，简单查找需要检查每个元素，因此需要执行n次操作。使用大O表示法，运行时间为O(n)。</span><br><span class="line">大O表示法让你能够比较操作数，它指出了算法运行时间的增速，指出了最糟糕的情况下的运行时间。</span><br><span class="line">重点：</span><br><span class="line">	1、算法的速度指的并非是时间，而是操作数的增速。</span><br><span class="line">	2、算法的速度，我们说的是随着输入的增加，其运行时间的将以什么样的速度增加。</span><br><span class="line">	3、算法的运行时间用大O表示法表示。</span><br><span class="line">	4、O(<span class="built_in">log</span> n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。</span><br></pre></td></tr></table></figure>
+<h3 id="二叉树初识"><a href="#二叉树初识" class="headerlink" title="二叉树初识"></a>二叉树初识</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
