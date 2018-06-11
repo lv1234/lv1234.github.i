@@ -242,6 +242,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/My-new-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/My-new-post/" itemprop="url">TCP/IP学习1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T01:06:42+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TCP-IP/" itemprop="url" rel="index">
+                    <span itemprop="name">TCP/IP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="数据链路"><a href="#数据链路" class="headerlink" title="数据链路"></a>数据链路</h1><ul>
+<li>以太网</li>
+<li>无线局域网</li>
+<li>PPP<h2 id="数据链路定义"><a href="#数据链路定义" class="headerlink" title="数据链路定义"></a>数据链路定义</h2>通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。<br>##MAC地址##<br>Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任何一个网卡的MAC地址都是唯一的。一般是使用十六进制数进行表示。<br>当然此处也是有例外情况存在的—-Mac地址可能不是唯一的<br>实际上MAC地址即使相同只要不属于同一个数据链路就不会出现问题。<br>例如人们可以在可以修改自己的主板地址，还有一台主机上同时启动多台虚拟机，由于没有硬件网卡的存在只能由虚拟软件自己设定MAC地址给多个虚拟网卡，这是就很难保证生成的MAC地址是独一无二的。<br>##共享介质型网络##<br>从通信介质上可以将网络分为：共享介质型、非共享介质型。<br>共享介质型网络指的是由多个设备共享一个通信介质的一种网络，在这种方式下，设备之间使用同一个载波信号进行发送和接收，使用半双工通信，并有必要对介质访问控制。</li>
+</ul>
+<p>共享介质型网络中有两种介质访问控制方式：一种是争用方式，另一种是令牌传递方式。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/12/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -424,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -446,7 +593,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
