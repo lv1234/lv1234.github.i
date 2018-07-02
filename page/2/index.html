@@ -242,6 +242,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/31/初识列表/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/31/初识列表/" itemprop="url">初识列表</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-31T23:07:29+08:00">
+                2018-05-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>初始列表先浅浅的谈一下我自己的学习对于python的理解就是我在接下来的时间就回忆一下自己对于list理解这样对于自己的提高也是非常的显著。闲话少叙，直接切入正题。</p>
+<p><strong>列表的语法表示</strong><br>Name =[“Jack”,”Mike”,”Billy”,”Sarah”]<br>可以在外面由中括号包围，其中的数据类型在这里是字符串也可以是其他的类型，使用逗号“，”隔开每一项。<br>若要访问某一项就需要使用这样的形式Name[0],这一点类似于数组。</p>
+<p><strong>列表的方法</strong></p>
+<p><em>append方法</em>：在列表中添加一项可以使用append()方法，还是使用上面的列表Name,可以为其添加一项Name.append(“Jace”)注意这里只能由一个参数。所添加的项会排在列表的末尾。</p>
+<p><em>pop方法</em>：pop方法可以删除列表末尾的项，并将这一项返回。</p>
+<p> <em>remove方法</em>：删除特定项如这样使用Name.remove(“Billy”)</p>
+<p><em>insert方法</em>：在列表特定的位置插入数据项Name.insert(1,”Billy”)</p>
+<p><em>extend方法</em>：在将列表进行合并，这里合并不是求交集，若有两个列表Names,Name,可以这样合并 Name.extend(Names)</p>
+<p>下面对于列表的使用我可以举出更多实用的例子来充实我自己的学习的观感这样对于我自己在接下来理解是非常的有帮助的。</p>
+<p><strong>列表中嵌套列表</strong></p>
+<pre><code>def intel(names):
+    for each_item in names:
+        if isinstance(each_item,list):
+            intel(each_item) 
+        else:
+            print(each_item)
+</code></pre><p><strong>总结</strong></p>
+<p>list列表在可以将不同的数据类型的项放在一个列表中，例如这样：<br>Name =[1,”yes”]这是合法的。<br>我可以可以操作来向列表中添加特定项：</p>
+<pre><code>Name.insert(1,Name[0])
+//在这里你会看到将Name的第一项加入了Name这个列表中。
+</code></pre><p>删除特定项也可以像下面这样：<br>    Name.remove(Name[0])<br>    //删除结合了访问某一项的方式</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/31/python学习之类的实例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1136,7 +1298,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1147,7 +1309,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1158,7 +1320,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
