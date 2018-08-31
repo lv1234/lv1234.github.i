@@ -242,6 +242,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/python学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/python学习/" itemprop="url">python学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T15:53:17+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用Head first python教程开启我的python学习之旅。<br>在学习了一些简单的函数之后我发现需要重点学习一下split()函数的使用以及参数情况，现在总结如下作为以后的review时的参考。</p>
+<p>##语法</p>
+<pre><code>`str.split(str=&quot;&quot;,num=string.count(str))`
+</code></pre><p>##参数</p>
+<blockquote>
+<p>str–分隔符，默认为所有的空字符、换行（\n）、制表符（\t）等。<br>num–分割次数</p>
+</blockquote>
+<p>##返回值<br>return分割后的字符串列表，注意这里返回的是一个list列表，列表的例子可以在这里举一个：[‘james’,’jack’,’lion’]这是一个列表。</p>
+<p>##实例1<br><code>str=&quot;Line1-abacdef\nLine2-abc\nLine4-abcd&quot;</code></p>
+<p><code>print str.split() //取消掉所有的空格符</code></p>
+<p><code>print str.split(&#39; &#39;,1)</code></p>
+<p>##实例输出结果<br>    <code>[&#39;Line1-abcdef&#39;,&#39;Line2-abc&#39;,&#39;Line4-abcd&#39;]</code><br>    <code>[&#39;Line1-abcdef&#39;,&#39;\nLine2-abc&#39;&#39;Line4-abcd&#39;]</code></p>
+<p>##实例2<br>  <code>str=&quot;hello boy&lt;[www.baidu.com]&gt;byebye&quot;</code></p>
+<p>  <code>str.split(&quot;[&quot;).split(&quot;]&quot;)[0].split(&quot;.&quot;)</code></p>
+<pre><code>&apos;www.baidu.com&apos;
+
+`str.split(&quot;[&quot;)[1].split(&quot;]&quot;)[0].split(&quot;.&quot;)`
+//从左往右执行三次
+[&apos;www&apos;,&apos;baidu&apos;,&apos;com&apos;]
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/My-new-post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -571,7 +731,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
