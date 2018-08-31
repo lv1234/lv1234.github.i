@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="以太网 无线局域网 PPP," />
+  <meta name="keywords" content="Yes, We Can" />
 
 
 
@@ -79,18 +79,16 @@
 
 
 
-<meta name="description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
-<meta name="keywords" content="以太网 无线局域网 PPP">
-<meta property="og:type" content="article">
-<meta property="og:title" content="TCP&#x2F;IP学习1">
-<meta property="og:url" content="http://yoursite.com/2018/05/13/My-new-post/index.html">
+<meta name="description" content="This is not just my blog ,but a kind of belief!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gatsby blog">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Gatsby blog">
-<meta property="og:description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
+<meta property="og:description" content="This is not just my blog ,but a kind of belief!">
 <meta property="og:locale" content="zh-Han">
-<meta property="og:updated_time" content="2018-05-24T15:11:27.878Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TCP&#x2F;IP学习1">
-<meta name="twitter:description" content="数据链路 以太网 无线局域网 PPP数据链路定义通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。##MAC地址##Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任">
+<meta name="twitter:title" content="Gatsby blog">
+<meta name="twitter:description" content="This is not just my blog ,but a kind of belief!">
 
 
 
@@ -120,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/13/My-new-post/"/>
+  <link rel="canonical" href="http://yoursite.com/page/3/"/>
 
 
 
 
 
-  <title>TCP/IP学习1 | Gatsby blog</title>
+  <title>Gatsby blog</title>
   
 
 
@@ -145,7 +143,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -228,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -260,7 +259,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">TCP/IP学习1</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/My-new-post/" itemprop="url">TCP/IP学习1</a></h1>
         
 
         <div class="post-meta">
@@ -332,13 +333,17 @@
       
 
       
-        <h1 id="数据链路"><a href="#数据链路" class="headerlink" title="数据链路"></a>数据链路</h1><ul>
+        
+          
+            <h1 id="数据链路"><a href="#数据链路" class="headerlink" title="数据链路"></a>数据链路</h1><ul>
 <li>以太网</li>
 <li>无线局域网</li>
 <li>PPP<h2 id="数据链路定义"><a href="#数据链路定义" class="headerlink" title="数据链路定义"></a>数据链路定义</h2>通过通信媒介互连的设备之间传输的规范。通信媒介包括双绞线电缆、同轴电缆、光缆、光纤、电波以及红外线。<br>##MAC地址##<br>Mac地址用于识别数据链路中的节点，我们在以太网中经常会看到wlan和蓝牙也是有使用到MAC地址。（在发送出来的地址在传输的过程中通过MAC地址判断目标地址）MAC地址长48比特，在使用网卡中，Mac地址一般会烧入到ROM中。因此，任何一个网卡的MAC地址都是唯一的。一般是使用十六进制数进行表示。<br>当然此处也是有例外情况存在的—-Mac地址可能不是唯一的<br>实际上MAC地址即使相同只要不属于同一个数据链路就不会出现问题。<br>例如人们可以在可以修改自己的主板地址，还有一台主机上同时启动多台虚拟机，由于没有硬件网卡的存在只能由虚拟软件自己设定MAC地址给多个虚拟网卡，这是就很难保证生成的MAC地址是独一无二的。<br>##共享介质型网络##<br>从通信介质上可以将网络分为：共享介质型、非共享介质型。<br>共享介质型网络指的是由多个设备共享一个通信介质的一种网络，在这种方式下，设备之间使用同一个载波信号进行发送和接收，使用半双工通信，并有必要对介质访问控制。</li>
 </ul>
 <p>共享介质型网络中有两种介质访问控制方式：一种是争用方式，另一种是令牌传递方式。</p>
 
+          
+        
       
     </div>
     
@@ -353,40 +358,14 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/以太网-无线局域网-PPP/" rel="tag"># 以太网 无线局域网 PPP</a>
-          
-        </div>
+
+      
+
       
 
       
       
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/05/12/hello-world/" rel="next" title="算法的python实现">
-                <i class="fa fa-chevron-left"></i> 算法的python实现
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/15/python学习/" rel="prev" title="python学习">
-                python学习 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -396,11 +375,159 @@
   </article>
 
 
+    
+      
 
-    <div class="post-spread">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/12/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="the great liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gatsby blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/12/hello-world/" itemprop="url">算法的python实现</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-12T00:54:24+08:00">
+                2018-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>开始我的算法学习之旅，在接下来的一个月时间内我会努力完成每天的小目标，现在是开始我的算法的时候了。</p>
+<h3 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">def binary_search(list,item):</span><br><span class="line">	low =0   //low用于跟踪要查找的列表部分</span><br><span class="line">	high =len(list)-1 //长度减去第一个low</span><br><span class="line">	<span class="keyword">while</span> low&lt;=high:  //范围未缩小到只包含一个元素，就执行下面的操作</span><br><span class="line">		mid=(low+high)/2</span><br><span class="line">		guess=list[mid]</span><br><span class="line">		<span class="keyword">if</span> guess ==item:  //找到了元素</span><br><span class="line">		<span class="built_in">return</span> mid</span><br><span class="line">		<span class="keyword">if</span> guess &gt; item:   //猜的数字小了</span><br><span class="line">			high=mid-1</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			low = mid+1</span><br><span class="line">	<span class="built_in">return</span> None            //没有指定的元素</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">二分查找相较简单查找执行效率要高。</span><br><span class="line">1、选用算法一般选择效率最高的算法，这样才能最高限度地减少运行时间或占用的空间</span><br><span class="line">简单的举个例子就是如果一个列表中包含400亿个数字，若使用简单查找最多需要猜40亿次</span><br><span class="line">也就是说对找到准确的数字需要猜测的次数与列表长度相同，这就是线性时间。找到准确的数字需要猜测的次数与列表长度相同，这就是线性时间。</span><br><span class="line">2、如果使用二分查找只需要猜32次，二分查找的时间为对数时间。</span><br></pre></td></tr></table></figure>
+<h3 id="大O表示法"><a href="#大O表示法" class="headerlink" title="大O表示法"></a>大O表示法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">大O表示法可以指出算法有多快，假设列表包含n个元素，简单查找需要检查每个元素，因此需要执行n次操作。使用大O表示法，运行时间为O(n)。</span><br><span class="line">大O表示法让你能够比较操作数，它指出了算法运行时间的增速，指出了最糟糕的情况下的运行时间。</span><br><span class="line">重点：</span><br><span class="line">	1、算法的速度指的并非是时间，而是操作数的增速。</span><br><span class="line">	2、算法的速度，我们说的是随着输入的增加，其运行时间的将以什么样的速度增加。</span><br><span class="line">	3、算法的运行时间用大O表示法表示。</span><br><span class="line">	4、O(<span class="built_in">log</span> n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。</span><br></pre></td></tr></table></figure>
+<h3 id="二叉树初识"><a href="#二叉树初识" class="headerlink" title="二叉树初识"></a>二叉树初识</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+          
+        
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
 
 
           </div>
@@ -408,10 +535,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -432,17 +555,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -502,22 +616,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据链路"><span class="nav-number">1.</span> <span class="nav-text">数据链路</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据链路定义"><span class="nav-number">1.1.</span> <span class="nav-text">数据链路定义</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -658,10 +756,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
